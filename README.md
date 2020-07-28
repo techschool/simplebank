@@ -39,3 +39,11 @@
     ```bash
     make migrateup
     ```
+
+### How to run
+
+- Run test:
+
+    ```bash
+    make test
+    ```
