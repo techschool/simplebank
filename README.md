@@ -20,6 +20,7 @@ Course videos:
 - Lecture #10: [Setup Github Actions for Golang + Postgres to run automated tests](https://www.youtube.com/watch?v=3mzQRJY1GVE&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=10)
 - Lecture #11: [Implement RESTful HTTP API in Go using Gin](https://www.youtube.com/watch?v=n_Y_YisgqTw&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=11)
 - Lecture #12: [Load config from file & environment variables in Go with Viper](https://www.youtube.com/watch?v=n5p8HkO6bnE&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=12)
+- Lecture #13: [Mock DB for testing HTTP API in Go and achieve 100% coverage](https://www.youtube.com/watch?v=rL0aeMutoJ0&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=13)
 
 ## Simple bank service
 
@@ -69,7 +70,27 @@ The service that we’re going to build is a simple bank. It will provide APIs f
     make migrateup
     ```
 
+## How to generate code
+
+- Generate SQL CRUD with sqlc:
+
+    ```bash
+    make sqlc
+    ```
+
+- Generate DB mock with gomock:
+
+    ````bash
+    make mock
+    ```
+
 ### How to run
+
+- Run server:
+
+    ```bash
+    make server
+    ```
 
 - Run test:
 
