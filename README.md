@@ -4,9 +4,9 @@ This repository contains the codes of the [Backend master class](https://bit.ly/
 
 ![Backend master class](backend-master.png)
 
-In this backend master class, we’re going to learn everything about how to design, develop, and deploy a complete backend system from scratch using PostgreSQL, Golang and Docker.
+In this backend master class, we’re going to learn everything about how to design, develop, and deploy a complete backend system from scratch using Golang, PostgreSQL, and Docker.
 
-Course videos:
+## Course videos
 
 - Lecture #1: [Design DB schema and generate SQL code with dbdiagram.io](https://www.youtube.com/watch?v=rx6CPDK_5mU&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=1)
 - Lecture #2: [Install & use Docker + Postgres + TablePlus to create DB schema](https://www.youtube.com/watch?v=Q9ipbLeqmQo&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=2)
@@ -70,7 +70,7 @@ The service that we’re going to build is a simple bank. It will provide APIs f
     make migrateup
     ```
 
-## How to generate code
+### How to generate code
 
 - Generate SQL CRUD with sqlc:
 
@@ -80,7 +80,7 @@ The service that we’re going to build is a simple bank. It will provide APIs f
 
 - Generate DB mock with gomock:
 
-    ````bash
+    ```bash
     make mock
     ```
 
