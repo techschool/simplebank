@@ -1,6 +1,7 @@
 package api
 
 import (
+	"database/sql"
 	"fmt"
 	"net/http"
 
@@ -22,11 +23,11 @@ func (server *Server) createTransfer(ctx *gin.Context) {
 		return
 	}
 
-	if !server.sameAccountCurrency(ctx, req.FromAccountID, req.Currency) {
+	if !server.validAccount(ctx, req.FromAccountID, req.Currency) {
 		return
 	}
 
-	if !server.sameAccountCurrency(ctx, req.ToAccountID, req.Currency) {
+	if !server.validAccount(ctx, req.ToAccountID, req.Currency) {
 		return
 	}
 
@@ -45,9 +46,14 @@ func (server *Server) createTransfer(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, result)
 }
 
-func (server *Server) sameAccountCurrency(ctx *gin.Context, accountID int64, currency string) bool {
+func (server *Server) validAccount(ctx *gin.Context, accountID int64, currency string) bool {
 	account, err := server.store.GetAccount(ctx, accountID)
 	if err != nil {
+		if err == sql.ErrNoRows {
+			ctx.JSON(http.StatusNotFound, errorResponse(err))
+			return false
+		}
+
 		ctx.JSON(http.StatusInternalServerError, errorResponse(err))
 		return false
 	}
