@@ -65,10 +65,28 @@ The service that we’re going to build is a simple bank. It will provide APIs f
     make createdb
     ```
 
-- Run db migration:
+- Run db migration up all versions:
 
     ```bash
     make migrateup
+    ```
+
+- Run db migration up 1 version:
+
+    ```bash
+    make migrateup1
+    ```
+
+- Run db migration down all versions:
+
+    ```bash
+    make migratedown
+    ```
+
+- Run db migration down 1 version:
+
+    ```bash
+    make migratedown1
     ```
 
 ### How to generate code
@@ -83,6 +101,12 @@ The service that we’re going to build is a simple bank. It will provide APIs f
 
     ```bash
     make mock
+    ```
+
+- Create a new db migration:
+
+    ```bash
+    migrate create -ext sql -dir db/migration -seq <migration_name>
     ```
 
 ### How to run
