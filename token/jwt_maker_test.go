@@ -8,8 +8,8 @@ import (
 	"github.com/techschool/simplebank/util"
 )
 
-func TestPasetoMaker(t *testing.T) {
-	maker, err := NewPasetoMaker(util.RandomString(32))
+func TestJWTMaker(t *testing.T) {
+	maker, err := NewJWTMaker(util.RandomString(32))
 	require.NoError(t, err)
 
 	username := util.RandomOwner()
@@ -32,8 +32,8 @@ func TestPasetoMaker(t *testing.T) {
 	require.WithinDuration(t, expiredAt, payload.ExpiredAt, time.Second)
 }
 
-func TestExpiredPasetoToken(t *testing.T) {
-	maker, err := NewPasetoMaker(util.RandomString(32))
+func TestExpiredJWTToken(t *testing.T) {
+	maker, err := NewJWTMaker(util.RandomString(32))
 	require.NoError(t, err)
 
 	token, err := maker.CreateToken(util.RandomOwner(), -time.Minute)
