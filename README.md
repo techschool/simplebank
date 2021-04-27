@@ -58,7 +58,7 @@ The service that we’re going to build is a simple bank. It will provide APIs f
 - [Sqlc](https://github.com/kyleconroy/sqlc#installation)
 
     ```bash
-    brew install golang-migrate
+    brew install sqlc
     ```
 
 ### Setup infrastructure
