@@ -62,7 +62,19 @@ The service that we’re going to build is a simple bank. It will provide APIs f
     brew install sqlc
     ```
 
+- [Gomock](https://github.com/golang/mock)
+
+	``` bash
+	go install github.com/golang/mock/mockgen@v1.6.0
+	```
+
 ### Setup infrastructure
+
+- Create the bank-network
+
+	``` bash
+	make network
+	```
 
 - Start postgres container:
 
