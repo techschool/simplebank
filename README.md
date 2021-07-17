@@ -33,6 +33,10 @@ In this backend master class, we’re going to learn everything about how to des
 - Lecture #23: [Build a minimal Golang Docker image with a multistage Dockerfile](https://www.youtube.com/watch?v=p1dwLKAxUxA&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=23)
 - Lecture #24: [How to use docker network to connect 2 stand-alone containers](https://www.youtube.com/watch?v=VcFnqQarpjI&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=24)
 - Lecture #25: [How to write docker-compose file and control service start-up orders with wait-for.sh](https://www.youtube.com/watch?v=jf6sQsz0M1M&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=25)
+- Lecture #26: [How to create a free tier AWS account](https://www.youtube.com/watch?v=4UqN1P8pIkM&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=26)
+- Lecture #27: [Auto build & push docker image to AWS ECR with Github Actions](https://www.youtube.com/watch?v=3M4MPmSWt9E&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=27)
+- Lecture #28: [How to create a production DB on AWS RDS](https://www.youtube.com/watch?v=0EaG3T4Q5fQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=28)
+- Lecture #29: [Store & retrieve production secrets with AWS secrets manager](https://www.youtube.com/watch?v=3i1mQ_Ye8jE&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=29)
 
 ## Simple bank service
 
@@ -64,17 +68,17 @@ The service that we’re going to build is a simple bank. It will provide APIs f
 
 - [Gomock](https://github.com/golang/mock)
 
-	``` bash
-	go install github.com/golang/mock/mockgen@v1.6.0
-	```
+    ``` bash
+    go install github.com/golang/mock/mockgen@v1.6.0
+    ```
 
 ### Setup infrastructure
 
 - Create the bank-network
 
-	``` bash
-	make network
-	```
+    ``` bash
+    make network
+    ```
 
 - Start postgres container:
 
@@ -144,4 +148,18 @@ The service that we’re going to build is a simple bank. It will provide APIs f
 
     ```bash
     make test
+    ```
+
+## Deploy to kubernetes cluster
+
+- [Install nginx ingress controller](https://kubernetes.github.io/ingress-nginx/deploy/#aws):
+
+    ```bash
+    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.48.1/deploy/static/provider/aws/deploy.yaml
+    ```
+
+- [Install cert-manager](https://cert-manager.io/docs/installation/kubernetes/):
+
+    ```bash
+    kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.4.0/cert-manager.yaml
     ```
