@@ -1,10 +1,26 @@
 # Simple Bank
 
-This repository contains the codes of the [Backend master class](https://bit.ly/backendmaster) course by [TECH SCHOOL](https://dev.to/techschoolguru).
+This repository contains the codes of the [Backend Master Class](https://bit.ly/backendmaster) course by [TECH SCHOOL](https://dev.to/techschoolguru) on our [Youtube channel](https://www.youtube.com/c/TECHSCHOOLGURU).
 
 ![Backend master class](backend-master.png)
 
-In this backend master class, we’re going to learn everything about how to design, develop, and deploy a complete backend system from scratch using Golang, PostgreSQL, and Docker.
+You can also find it on Udemy at [this link](https://www.udemy.com/course/backend-master-class-golang-postgresql-kubernetes/?referralCode=DD082CB0A39D22EC43EE).
+
+In this course, you will learn step-by-step how to design, develop and deploy a backend web service from scratch. I believe the best way to learn programming is to build a real application. Therefore, throughout the course, you will learn how to build a backend web service for a simple bank. It will provide APIs for the frontend to do the following things:
+
+- Create and manage bank accounts.
+- Record all balance changes to each of the accounts.
+- Perform a money transfer between 2 accounts.
+
+The programming language we will use to develop the service is Golang, but the course is not just about coding in Go. The course is divided into 3 main parts:
+
+1. In the first part, you will learn deeply about how to design the database, generate codes to talk to the DB in a consistent and reliable way using transactions, understand the DB isolation levels, and how to use it correctly in production. Besides the database, you will also learn how to use docker for local development, how to use Git to manage your codes, and how to use Github Action to run unit tests automatically.
+
+2. In the second part, you will learn how to build a set of RESTful HTTP APIs using Gin - one of the most popular Golang frameworks for building web services. This includes everything from loading app configs, mocking DB for more robust unit tests, handling errors, authenticating users, and securing the APIs with JWT and PASETO access tokens.
+
+3. In the last part, you will learn how to build your app with Docker and deploy it to a production Kubernetes cluster on AWS. The lectures are very detailed with a step-by-step guide, from how to build a minimal docker image, set up a free-tier AWS account, create a production database, store and retrieve production secrets, create a Kubernetes cluster with EKS, use Github Action to automatically build and deploy the image to the EKS cluster, buy a domain name and route the traffics to the service, secure the connection with HTTPs and auto-renew TLS certificate from Let's Encrypt.
+
+This course is designed with a lot of details, so that everyone, even with very little programming experience can understand and do it by themselves. I strongly believe that after the course, you would be able to work much more confidently and effectively in your projects.
 
 ## Course videos
 
@@ -37,6 +53,13 @@ In this backend master class, we’re going to learn everything about how to des
 - Lecture #27: [Auto build & push docker image to AWS ECR with Github Actions](https://www.youtube.com/watch?v=3M4MPmSWt9E&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=27)
 - Lecture #28: [How to create a production DB on AWS RDS](https://www.youtube.com/watch?v=0EaG3T4Q5fQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=28)
 - Lecture #29: [Store & retrieve production secrets with AWS secrets manager](https://www.youtube.com/watch?v=3i1mQ_Ye8jE&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=29)
+- Lecture #30: [Kubernetes architecture & How to create an EKS cluster on AWS](https://www.youtube.com/watch?v=TxnCMhYhqRU&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=30)
+- Lecture #31: [How to use kubectl & k9s to connect to a kubernetes cluster on AWS EKS](https://www.youtube.com/watch?v=hwMevai3_wQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=31)
+- Lecture #32: [How to deploy a web app to Kubernetes cluster on AWS EKS](https://www.youtube.com/watch?v=PH-Mcd0Rs1w&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=32)
+- Lecture #33: [Register a domain name & set up A-record using Route53](https://www.youtube.com/watch?v=-JF2ukmW3i8&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=33)
+- Lecture #34: [How to use Ingress to route traffics to different services in Kubernetes](https://www.youtube.com/watch?v=lBrqP6FkNsU&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=34)
+- Lecture #35: [Automatic issue TLS certificates in Kubernetes with Let's Encrypt](https://www.youtube.com/watch?v=nU4FTjrgSKI&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=35)
+- Lecture #36: [Automatic deploy to Kubernetes with Github Action](https://www.youtube.com/watch?v=GVY-zze0V_U&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=36)
 
 ## Simple bank service
 
