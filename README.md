@@ -83,6 +83,20 @@ The service that we’re going to build is a simple bank. It will provide APIs f
     brew install golang-migrate
     ```
 
+- [DB Docs](https://dbdocs.io/docs)
+
+    ```bash
+    npm install -g dbdocs
+    dbdocs login
+    ```
+
+- [DBML CLI](https://www.dbml.org/cli/#installation)
+
+    ```bash
+    npm install -g @dbml/cli
+    dbml2sql --version
+    ```
+
 - [Sqlc](https://github.com/kyleconroy/sqlc#installation)
 
     ```bash
@@ -139,7 +153,23 @@ The service that we’re going to build is a simple bank. It will provide APIs f
     make migratedown1
     ```
 
+### Documentation
+
+- Generate DB documentation:
+
+    ```bash
+    make db_docs
+    ```
+
+- Access the DB documentation at [this address](https://dbdocs.io/techschool.guru/simple_bank). Password: `secret`
+
 ### How to generate code
+
+- Generate schema SQL file with DBML:
+
+    ```bash
+    make db_schema
+    ```
 
 - Generate SQL CRUD with sqlc:
 
