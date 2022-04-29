@@ -60,6 +60,10 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #34: [How to use Ingress to route traffics to different services in Kubernetes](https://www.youtube.com/watch?v=lBrqP6FkNsU&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=34)
 - Lecture #35: [Automatic issue TLS certificates in Kubernetes with Let's Encrypt](https://www.youtube.com/watch?v=nU4FTjrgSKI&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=35)
 - Lecture #36: [Automatic deploy to Kubernetes with Github Action](https://www.youtube.com/watch?v=GVY-zze0V_U&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=36)
+- Lecture #37: [How to manage user session with refresh token - Golang](https://www.youtube.com/watch?v=rT20ylRLm5U&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=37)
+- Lecture #38: [Generate DB documentation page and schema SQL dump from DBML](https://www.youtube.com/watch?v=dGfVwsPr-IU&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=38)
+- Lecture #39: [Introduction to gRPC](https://www.youtube.com/watch?v=mRGnA3wPxMM&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=39)
+- Lecture #40: [Define gRPC API and generate Go code with protobuf](https://www.youtube.com/watch?v=mVWgEmyAhvM&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=40)
 
 ## Simple bank service
 
