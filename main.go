@@ -24,7 +24,11 @@ import (
 	"google.golang.org/protobuf/encoding/protojson"
 )
 
-func main() {
+/**
+This is main function
+*/
+
+gitfunc main() {
 	config, err := util.LoadConfig(".")
 	if err != nil {
 		log.Fatal("cannot load config:", err)
