@@ -17,7 +17,7 @@ jobs:
     - name: Install kubectl
       uses: azure/setup-kubectl@v1
       with:
-        version: 'v1.21.3'
+        version: 'v1.25.0'
       id: install
 
     - name: Configure AWS credentials
