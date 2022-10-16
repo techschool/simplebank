@@ -87,9 +87,10 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #46: [Embed static frontend files inside Golang backend server's binary](https://www.youtube.com/watch?v=xNgOIm86N5Q&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=46)
 - Lecture #47: [Validate gRPC parameters and send human/machine friendly response](https://www.youtube.com/watch?v=CxZ9hMtmZtc&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=47)
 - Lecture #48: [Run DB migrations directly inside Golang code](https://www.youtube.com/watch?v=TG43cMpaxlI&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=48)
-- Lecture #49: [Partial update DB record with SQLC nullable parameters](https://www.youtube.com/watch?v=I2sbw1PzzW0&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=50)
-- Lecture #50: [Build gRPC update API with optional parameters](https://www.youtube.com/watch?v=ygqSHIEc8sc&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=51)
-- Lecture #51: [Add authorization to protect gRPC API](https://www.youtube.com/watch?v=_jqNs3d99ps&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=52)
+- Lecture #49: [Partial update DB record with SQLC nullable parameters](https://www.youtube.com/watch?v=I2sbw1PzzW0&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=49)
+- Lecture #50: [Build gRPC update API with optional parameters](https://www.youtube.com/watch?v=ygqSHIEc8sc&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=50)
+- Lecture #51: [Add authorization to protect gRPC API](https://www.youtube.com/watch?v=_jqNs3d99ps&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=51)
+- Lecture #52: [Write structured logs for gRPC APIs](https://www.youtube.com/watch?v=tTAxLGrDmPo&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=52)
 
 ## Simple bank service
 
