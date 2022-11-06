@@ -91,6 +91,7 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #50: [Build gRPC update API with optional parameters](https://www.youtube.com/watch?v=ygqSHIEc8sc&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=50)
 - Lecture #51: [Add authorization to protect gRPC API](https://www.youtube.com/watch?v=_jqNs3d99ps&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=51)
 - Lecture #52: [Write structured logs for gRPC APIs](https://www.youtube.com/watch?v=tTAxLGrDmPo&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=52)
+- Lecture #53: [How to write HTTP logger middleware in Go](https://www.youtube.com/watch?v=Lbiz-PZNiU0&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=53)
 
 ## Simple bank service
 
