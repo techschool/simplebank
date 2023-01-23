@@ -1,10 +1,10 @@
 # Simple Bank
 
-This repository contains the codes of the [Backend Master Class](https://bit.ly/backendmaster) course by [TECH SCHOOL](https://bit.ly/m/techschool) on our [Youtube channel](https://www.youtube.com/c/TECHSCHOOLGURU).
+This repository contains the codes of the [Backend Master Class](https://bit.ly/backendmaster) course by [TECH SCHOOL](https://bit.ly/m/techschool).
 
 ![Backend master class](backend-master.png)
 
-You can also find it on Udemy at [this link](https://www.udemy.com/course/backend-master-class-golang-postgresql-kubernetes/?referralCode=DD082CB0A39D22EC43EE).
+You can also find it on Udemy at [this link](https://bit.ly/backendudemy).
 
 And don't hesitate to [join Tech School's Discord group](https://bit.ly/techschooldc) to chat directly with me and other students.
 
