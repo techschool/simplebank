@@ -1,10 +1,10 @@
 # Simple Bank
 
-This repository contains the codes of the [Backend Master Class](https://bit.ly/backendmaster) course by [TECH SCHOOL](https://dev.to/techschoolguru) on our [Youtube channel](https://www.youtube.com/c/TECHSCHOOLGURU).
+This repository contains the codes of the [Backend Master Class](https://bit.ly/backendmaster) course by [TECH SCHOOL](https://bit.ly/m/techschool).
 
 ![Backend master class](backend-master.png)
 
-You can also find it on Udemy at [this link](https://www.udemy.com/course/backend-master-class-golang-postgresql-kubernetes/?referralCode=DD082CB0A39D22EC43EE).
+You can also find it on Udemy at [this link](https://bit.ly/backendudemy).
 
 And don't hesitate to [join Tech School's Discord group](https://bit.ly/techschooldc) to chat directly with me and other students.
 
@@ -14,7 +14,7 @@ In this course, you will learn step-by-step how to design, develop and deploy a 
 - Record all balance changes to each of the accounts.
 - Perform a money transfer between 2 accounts.
 
-The programming language we will use to develop the service is Golang, but the course is not just about coding in Go. You will learn a lot of different topics regarding backend web development. They are presented throughout the course in 5 sections:
+The programming language we will use to develop the service is Golang, but the course is not just about coding in Go. You will learn a lot of different topics regarding backend web development. They are presented in 5 sections:
 
 1. In the 1st section, you will learn deeply about how to design the database, generate codes to talk to the DB in a consistent and reliable way using transactions, understand the DB isolation levels, and how to use it correctly in production. Besides the database, you will also learn how to use docker for local development, how to use Git to manage your codes, and how to use GitHub Action to run unit tests automatically.
 
@@ -22,9 +22,9 @@ The programming language we will use to develop the service is Golang, but the c
 
 3. In the 3rd section, you will learn how to build your app with Docker and deploy it to a production Kubernetes cluster on AWS. The lectures are very detailed with a step-by-step guide, from how to build a minimal docker image, set up a free-tier AWS account, create a production database, store and retrieve production secrets, create a Kubernetes cluster with EKS, use GitHub Action to automatically build and deploy the image to the EKS cluster, buy a domain name and route the traffics to the service, secure the connection with HTTPS and auto-renew TLS certificate from Let's Encrypt.
 
-4. In the 4th section, we will discuss several advanced backend topics such as managing user sessions, building gRPC APIs, using gRPC gateway to serve both gRPC and HTTP requests at the same time, and embedding Swagger documentation as part of the backend service.
+4. In the 4th section, we will discuss several advanced backend topics such as managing user sessions, building gRPC APIs, using gRPC gateway to serve both gRPC and HTTP requests at the same time, embedding Swagger documentation as part of the backend service, partially updating a record using optional parameters, and writing structured logger HTTP middlewares and gRPC interceptors.
 
-5. Then the 5th section will introduce you to asynchronous processing in Golang using background workers and Redis as its message queue, and how to gracefully shut down the server to protect your processing resources. As this part is still a work in progress, we will keep making and uploading new videos about new topics in the future. So please come back here to check them out from time to time.
+5. Then the 5th section will introduce you to asynchronous processing in Golang using background workers and Redis as its message queue, and how to gracefully shut down the server to protect your processing resources. As this part is still a work in progress, we will keep making and uploading new videos about new topics in the future, such as: sending emails, gracefully shutting down servers, CORS, bulk inserts, etc. So please come back here to check them out from time to time.
 
 This course is designed with a lot of details, so that everyone, even with very little programming experience can understand and do it by themselves. I strongly believe that after the course, you would be able to work much more confidently and effectively on your projects.
 
@@ -100,6 +100,7 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #54: [Implement background worker in Go with Redis and Asynq](https://www.youtube.com/watch?v=XOXdYs8mKkI&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=54)
 - Lecture #55: [Integrate async worker to Go web server](https://www.youtube.com/watch?v=eXYKGPEXocM&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=55)
 - Lecture #56: [Why you should send async tasks to Redis within a DB transaction](https://www.youtube.com/watch?v=ZfFxdPbgN88&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=56)
+- Lecture #57: [How to handle errors and print logs for Go Asynq workers](https://www.youtube.com/watch?v=YgfmPIJRg2U&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=57)
 
 ## Simple bank service
 
