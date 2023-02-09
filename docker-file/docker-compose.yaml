@@ -1,0 +1,37 @@
+version: '3'
+services:
+
+  # mysql:
+  #   # use this for mac
+  #   platform: linux/amd64
+  #   image: mysql:8.0.26
+
+  #   # use this for linux
+  #   # platform: linux/x86_64
+  #   # image: mysql:8.0.16
+
+  #   # ======================= #
+  #   restart: on-failure
+  #   ports:
+  #     - "3306:3306"
+  #   command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+  #   volumes:
+  #     - "./storage/mysql/scripts:/docker-entrypoint-initdb.d"
+  #     - "./storage/mysql/data:/var/lib/mysql"
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: password
+  #     MYSQL_TCP_PORT: 3306
+
+  postgres:
+    image: onjin/alpine-postgres:latest
+    restart: on-failure
+    ports:
+      - "5432:5432"
+    volumes:
+      - "./storage/postgres/scripts:/docker-entrypoint-initdb.d/"
+      - "./storage/postgres/data:/var/lib/postgresql/data"
+    environment:
+      LC_ALL: C.UTF-8
+      POSTGRES_USER: root
+      POSTGRES_DB: db_simple_bank
+      POSTGRES_PASSWORD: password

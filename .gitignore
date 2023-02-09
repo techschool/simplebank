@@ -1,2 +1,2 @@
-*.log
-.vscode
+# Storage for Docker
+./docker-file/storage/*
