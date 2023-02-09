@@ -15,3 +15,7 @@ migratedown:
 .PHONY: migratedown1
 migratedown1:
 	migrate -path db/migration -database "$(DB_URL)" -verbose down 1
+
+.PHONY: sqlc
+sqlc:
+	sqlc generate
