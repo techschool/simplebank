@@ -8,5 +8,5 @@ packages:
     emit_json_tags: true
     emit_prepared_queries: false
     emit_interface: false
-    emit_exact_table_names: true
+    emit_exact_table_names: false
     # emit_empty_slices: true
