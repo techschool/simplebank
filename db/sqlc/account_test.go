@@ -33,6 +33,15 @@ func createRandomAccount(t *testing.T) Account {
 }
 
 func TestCreate(t *testing.T) {
+	// This work but test main does not work??
+	// conn, err := sql.Open(dbDriver, dbSource)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// 	log.Println("cannot connect to database")
+	// }
+
+	// testQueries = New(conn)
+	// defer conn.Close()
 	createRandomAccount(t)
 }
 
