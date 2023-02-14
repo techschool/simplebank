@@ -23,3 +23,7 @@ sqlc:
 .PHONY: test
 test:
 	go test -v -cover -short ./...
+
+.PHONY: whoami
+ptest:
+	whoami
