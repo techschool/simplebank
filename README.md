@@ -102,6 +102,8 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #56: [Send async tasks to Redis within a DB transaction](https://www.youtube.com/watch?v=ZfFxdPbgN88&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=56)
 - Lecture #57: [How to handle errors and print logs for Go Asynq workers](https://www.youtube.com/watch?v=YgfmPIJRg2U&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=57)
 - Lecture #58: [A bit of delay might be good for your async tasks](https://www.youtube.com/watch?v=ILNiZgseLUI&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=58)
+- Lecture #59: [How to send emails in Go via Gmail](https://www.youtube.com/watch?v=L9TbZxpykLQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=59)
+- Lecture #60: [How to skip test in Go and config test flag in vscode](https://www.youtube.com/watch?v=0UwZGM9iqTE&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=60)
 
 ## Simple bank service
 
@@ -228,7 +230,7 @@ The service that we’re going to build is a simple bank. It will provide APIs f
 - Create a new db migration:
 
     ```bash
-    migrate create -ext sql -dir db/migration -seq <migration_name>
+    make new_migration name=<migration_name>
     ```
 
 ### How to run
