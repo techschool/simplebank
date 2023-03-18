@@ -104,6 +104,7 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #58: [A bit of delay might be good for your async tasks](https://www.youtube.com/watch?v=ILNiZgseLUI&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=58)
 - Lecture #59: [How to send emails in Go via Gmail](https://www.youtube.com/watch?v=L9TbZxpykLQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=59)
 - Lecture #60: [How to skip test in Go and config test flag in vscode](https://www.youtube.com/watch?v=0UwZGM9iqTE&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=60)
+- Lecture #61: [Email verification in Go: design DB and send email](https://www.youtube.com/watch?v=lEHkwDPHrcc&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=61)
 
 ## Simple bank service
 
