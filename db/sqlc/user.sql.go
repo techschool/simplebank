@@ -74,9 +74,10 @@ SET
   hashed_password = COALESCE($1, hashed_password),
   password_changed_at = COALESCE($2, password_changed_at),
   full_name = COALESCE($3, full_name),
-  email = COALESCE($4, email)
+  email = COALESCE($4, email),
+  is_email_verified = COALESCE($5, is_email_verified)
 WHERE
-  username = $5
+  username = $6
 RETURNING username, hashed_password, full_name, email, password_changed_at, created_at, is_email_verified
 `
 
@@ -85,6 +86,7 @@ type UpdateUserParams struct {
 	PasswordChangedAt sql.NullTime   `json:"password_changed_at"`
 	FullName          sql.NullString `json:"full_name"`
 	Email             sql.NullString `json:"email"`
+	IsEmailVerified   sql.NullBool   `json:"is_email_verified"`
 	Username          string         `json:"username"`
 }
 
@@ -94,6 +96,7 @@ func (q *Queries) UpdateUser(ctx context.Context, arg UpdateUserParams) (User, e
 		arg.PasswordChangedAt,
 		arg.FullName,
 		arg.Email,
+		arg.IsEmailVerified,
 		arg.Username,
 	)
 	var i User
