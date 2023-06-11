@@ -1,12 +1,12 @@
-version: "1"
-packages:
-  - name: "db"
-    path: "./db/sqlc"
-    queries: "./db/query/"
-    schema: "./db/migration/"
-    engine: "postgresql"
-    emit_json_tags: true
-    emit_prepared_queries: false
-    emit_interface: true
-    emit_exact_table_names: false
-    emit_empty_slices: true
+version: "2"
+sql:
+- schema: "db/migration"
+  queries: "db/query"
+  engine: "postgresql"
+  gen:
+    go: 
+      package: "db"
+      out: "db/sqlc"
+      emit_json_tags: true
+      emit_interface: true
+      emit_empty_slices: true
