@@ -106,6 +106,8 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #60: [How to skip test in Go and config test flag in vscode](https://www.youtube.com/watch?v=0UwZGM9iqTE&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=60)
 - Lecture #61: [Email verification in Go: design DB and send email](https://www.youtube.com/watch?v=lEHkwDPHrcc&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=61)
 - Lecture #62: [Implement email verification API in Go](https://www.youtube.com/watch?v=50ZN-4UNwnY&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=62)
+- Lecture #63: [Unit test gRPC API with mock DB & Redis](https://www.youtube.com/watch?v=QFxZlKb7W2k&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=63)
+- Lecture #64: [How to test a gRPC API that requires authentication](https://www.youtube.com/watch?v=MI7ucbAlZPM&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=64)
 
 ## Simple bank service
 
