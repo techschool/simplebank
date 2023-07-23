@@ -14,7 +14,7 @@ In this course, you will learn step-by-step how to design, develop and deploy a 
 - Record all balance changes to each of the accounts.
 - Perform a money transfer between 2 accounts.
 
-The programming language we will use to develop the service is Golang, but the course is not just about coding in Go. You will learn a lot of different topics regarding backend web development. They are presented in 5 sections:
+The programming language we will use to develop the service is Golang, but the course is not just about coding in Go. You will learn a lot of different topics regarding backend web development. They are presented in 6 sections:
 
 1. In the 1st section, you will learn deeply about how to design the database, generate codes to talk to the DB in a consistent and reliable way using transactions, understand the DB isolation levels, and how to use it correctly in production. Besides the database, you will also learn how to use docker for local development, how to use Git to manage your codes, and how to use GitHub Action to run unit tests automatically.
 
@@ -24,7 +24,9 @@ The programming language we will use to develop the service is Golang, but the c
 
 4. In the 4th section, we will discuss several advanced backend topics such as managing user sessions, building gRPC APIs, using gRPC gateway to serve both gRPC and HTTP requests at the same time, embedding Swagger documentation as part of the backend service, partially updating a record using optional parameters, and writing structured logger HTTP middlewares and gRPC interceptors.
 
-5. Then the 5th section will introduce you to asynchronous processing in Golang using background workers and Redis as its message queue, and how to gracefully shut down the server to protect your processing resources. As this part is still a work in progress, we will keep making and uploading new videos about new topics in the future, such as: sending emails, gracefully shutting down servers, CORS, bulk inserts, etc. So please come back here to check them out from time to time.
+5. Then the 5th section will introduce you to asynchronous processing in Golang using background workers and Redis as its message queue. We'll also learn how to create and send emails to users via Gmail SMTP server. Along the way, we'll learn more about writing unit tests for our gRPC services that might involve mocking multiple dependencies at once.
+
+6. The final section 6th concludes the course with lectures about how to improve the stability and security of the server. We'll keep updating dependency packages to the latest version, use Cookies to make the refresh token more secure, and learn how to gracefully shut down the server to protect the processing resources. As this part is still a work in progress, we will keep making and uploading new videos about new topics in the future. So please come back here to check them out from time to time.
 
 This course is designed with a lot of details, so that everyone, even with very little programming experience can understand and do it by themselves. I strongly believe that after the course, you would be able to work much more confidently and effectively on your projects.
 
@@ -108,6 +110,12 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #62: [Implement email verification API in Go](https://www.youtube.com/watch?v=50ZN-4UNwnY&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=62)
 - Lecture #63: [Unit test gRPC API with mock DB & Redis](https://www.youtube.com/watch?v=QFxZlKb7W2k&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=63)
 - Lecture #64: [How to test a gRPC API that requires authentication](https://www.youtube.com/watch?v=MI7ucbAlZPM&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=64)
+
+### Section 6: Improve the stability and security of the server
+
+- Lecture #65: [Config sqlc version 2 for Go and Postgres](https://www.youtube.com/watch?v=FfXE245HZB4&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=65)
+- Lecture #66: [Switch DB driver from lib/pq to pgx](https://www.youtube.com/watch?v=m9gYy5U0edQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=66)
+- Lecture #67: [How to handle DB errors with PGX driver](https://www.youtube.com/watch?v=9vf3zxrMUgw&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=67)
 
 ## Simple bank service
 
