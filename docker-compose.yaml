@@ -6,16 +6,25 @@ services:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=secret
       - POSTGRES_DB=simple_bank
+    ports:
+      - "5432:5432"
+    volumes:
+      - data-volume:/var/lib/postgresql/data
+  redis:
+    image: redis:7-alpine
   api:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
+      - "9090:9090"
     environment:
       - DB_SOURCE=postgresql://root:secret@postgres:5432/simple_bank?sslmode=disable
+      - REDIS_ADDRESS=redis:6379
     depends_on:
       - postgres
+      - redis
     entrypoint:
       [
         "/app/wait-for.sh",
@@ -24,3 +33,5 @@ services:
         "/app/start.sh"
       ]
     command: [ "/app/main" ]
+volumes:
+  data-volume:
