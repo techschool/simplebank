@@ -85,7 +85,7 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #40: [Define gRPC API and generate Go code with protobuf](https://www.youtube.com/watch?v=mVWgEmyAhvM&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=40)
 - Lecture #41: [How to run a golang gRPC server and call its API](https://www.youtube.com/watch?v=BkfBJIS0_ro&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=41)
 - Lecture #42: [Implement gRPC API to create and login users in Go](https://www.youtube.com/watch?v=7xiWqyZW9lE&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=42)
-- Lecture #43: [Write code once, serve both gRPC & HTTP requests](https://www.youtube.com/watch?v=3FfDH3d0aHs&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=43)
+- Lecture #43: [gRPC gateway: write code once, serve both gRPC & HTTP requests](https://www.youtube.com/watch?v=3FfDH3d0aHs&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=43)
 - Lecture #44: [How to extract info from gRPC metadata](https://www.youtube.com/watch?v=Sno10WQ21Zs&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=44)
 - Lecture #45: [Automatic generate & serve Swagger docs from Go server](https://www.youtube.com/watch?v=Uwkxxee7tvk&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=45)
 - Lecture #46: [Embed static frontend files inside Golang backend server's binary](https://www.youtube.com/watch?v=xNgOIm86N5Q&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=46)
@@ -116,6 +116,9 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #65: [Config sqlc version 2 for Go and Postgres](https://www.youtube.com/watch?v=FfXE245HZB4&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=65)
 - Lecture #66: [Switch DB driver from lib/pq to pgx](https://www.youtube.com/watch?v=m9gYy5U0edQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=66)
 - Lecture #67: [How to handle DB errors with PGX driver](https://www.youtube.com/watch?v=9vf3zxrMUgw&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=67)
+- Lecture #68: [Docker compose: port + volume mapping](https://www.youtube.com/watch?v=nJBT5SKENAw&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=68)
+- Lecture #69: [How to install & use binary packages in Go](https://www.youtube.com/watch?v=TnJ4ssoNvkY&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE&index=69)
+
 
 ## Simple bank service
 
