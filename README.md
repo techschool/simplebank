@@ -120,7 +120,7 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #67: [How to handle DB errors with PGX driver](https://www.youtube.com/watch?v=9vf3zxrMUgw&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 - Lecture #68: [Docker compose: port + volume mapping](https://www.youtube.com/watch?v=nJBT5SKENAw&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 - Lecture #69: [How to install & use binary packages in Go](https://www.youtube.com/watch?v=TnJ4ssoNvkY&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
-- Lecture #70: [How to install & use binary packages in Go](https://www.youtube.com/watch?v=Py7dRhtuJ3E&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
+- Lecture #70: [Implement role-based access control (RBAC) in Go](https://www.youtube.com/watch?v=Py7dRhtuJ3E&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 
 ## Simple bank service
 
