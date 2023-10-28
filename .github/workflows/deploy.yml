@@ -43,13 +43,13 @@ jobs:
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG -t $ECR_REGISTRY/$ECR_REPOSITORY:latest .
         docker push -a $ECR_REGISTRY/$ECR_REPOSITORY
 
-    - name: Update kube config
-      run: aws eks update-kubeconfig --name simple-bank --region eu-west-1
+    # - name: Update kube config
+    #   run: aws eks update-kubeconfig --name simple-bank --region eu-west-1
 
-    - name: Deploy image to Amazon EKS
-      run: |
-        kubectl apply -f eks/aws-auth.yaml
-        kubectl apply -f eks/deployment.yaml
-        kubectl apply -f eks/service.yaml
-        kubectl apply -f eks/issuer.yaml
-        kubectl apply -f eks/ingress.yaml
+    # - name: Deploy image to Amazon EKS
+    #   run: |
+    #     kubectl apply -f eks/aws-auth.yaml
+    #     kubectl apply -f eks/deployment.yaml
+    #     kubectl apply -f eks/service.yaml
+    #     kubectl apply -f eks/issuer.yaml
+    #     kubectl apply -f eks/ingress.yaml
