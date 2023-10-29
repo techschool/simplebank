@@ -52,4 +52,6 @@ jobs:
         kubectl apply -f eks/deployment.yaml
         kubectl apply -f eks/service.yaml
         kubectl apply -f eks/issuer.yaml
-        kubectl apply -f eks/ingress.yaml
+        kubectl apply -f eks/ingress-nginx.yaml
+        kubectl apply -f eks/ingress-http.yaml
+        kubectl apply -f eks/ingress-grpc.yaml
