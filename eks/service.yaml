@@ -8,5 +8,10 @@ spec:
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: http-server
+      name: http-service
+    - protocol: TCP
+      port: 90
+      targetPort: grpc-server
+      name: grpc-service
   type: ClusterIP
