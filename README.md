@@ -121,6 +121,9 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #68: [Docker compose: port + volume mapping](https://www.youtube.com/watch?v=nJBT5SKENAw&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 - Lecture #69: [How to install & use binary packages in Go](https://www.youtube.com/watch?v=TnJ4ssoNvkY&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 - Lecture #70: [Implement role-based access control (RBAC) in Go](https://www.youtube.com/watch?v=Py7dRhtuJ3E&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
+- Lecture #71: [Grant AWS EKS cluster access to Postgres and Redis using security group](https://www.youtube.com/watch?v=pPXYu6QQGE8&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
+- Lecture #72: [Deploy gRPC + HTTP server to AWS EKS cluster](https://www.youtube.com/watch?v=Pd7aeh014nU&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
+- Lecture #73: [Don't lose money on AWS](https://www.youtube.com/watch?v=VEf7IpUn6BQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 
 ## Simple bank service
 
