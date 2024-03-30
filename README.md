@@ -124,6 +124,7 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #71: [Grant AWS EKS cluster access to Postgres and Redis using security group](https://www.youtube.com/watch?v=pPXYu6QQGE8&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 - Lecture #72: [Deploy gRPC + HTTP server to AWS EKS cluster](https://www.youtube.com/watch?v=Pd7aeh014nU&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 - Lecture #73: [Don't lose money on AWS](https://www.youtube.com/watch?v=VEf7IpUn6BQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
+- Lecture #74: [Go 1.22 fixed the most common for-loop trap](https://www.youtube.com/watch?v=rIHO9TqJtQQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 
 ## Simple bank service
 
