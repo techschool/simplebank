@@ -74,6 +74,6 @@ func TestListTransfer(t *testing.T) {
 
 	for _, transfer := range transfers {
 		require.NotEmpty(t, transfer)
-		require.True(t, transfer.FromAccountID == account1.ID || transfer.ToAccountID == account1.ID)
+		require.True(t, transfer.FromAccountID == account1.ID && transfer.ToAccountID == account1.ID)
 	}
 }
