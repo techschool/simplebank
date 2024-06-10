@@ -3,7 +3,7 @@ services:
   postgres:
     image: postgres:14-alpine
     environment:
-      - POSTGRES_USER=root
+      - POSTGRES_USER=user=root
       - POSTGRES_PASSWORD=secret
       - POSTGRES_DB=simple_bank
     ports:
