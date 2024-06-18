@@ -20,6 +20,7 @@ jobs:
         version: 'v1.21.3'
       id: install
 
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
