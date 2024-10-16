@@ -1,0 +1,14 @@
+### create account
+POST http://localhost:8080/accounts
+Content-Type: application/json
+
+{
+  "owner": "John Doe",
+  "currency": "USD"
+}
+
+### get account
+GET http://localhost:8080/accounts/1
+
+### list accounts
+GET http://localhost:8080/accounts?page_id=1&page_size=5
