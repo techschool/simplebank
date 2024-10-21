@@ -4,10 +4,10 @@ import (
 	"database/sql"
 	"log"
 
+	"github.com/bastiendmt/simplebank/api"
+	db "github.com/bastiendmt/simplebank/db/sqlc"
+	"github.com/bastiendmt/simplebank/util"
 	_ "github.com/lib/pq"
-	"github.com/techschool/simplebank/api"
-	db "github.com/techschool/simplebank/db/sqlc"
-	"github.com/techschool/simplebank/util"
 )
 
 func main() {
