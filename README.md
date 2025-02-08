@@ -18,7 +18,7 @@ The programming language we will use to develop the service is Golang, but the c
 
 1. In the 1st section, you will learn deeply about how to design the database, generate codes to talk to the DB in a consistent and reliable way using transactions, understand the DB isolation levels, and how to use it correctly in production. Besides the database, you will also learn how to use docker for local development, how to use Git to manage your codes, and how to use GitHub Action to run unit tests automatically.
 
-2. In the 2nd section, you will learn how to build a set of RESTful HTTP APIs using Gin - one of the most popular Golang frameworks for building web services. This includes everything from loading app configs, mocking DB for more robust unit tests, handling errors, authenticating users, and securing the APIs with JWT and PASETO access tokens.  
+2. In the 2nd section, you will learn how to build a set of RESTful HTTP APIs using Gin - one of the most popular Golang frameworks for building web services. This includes everything from loading app configs, mocking DB for more robust unit tests, handling errors, authenticating users, and securing the APIs with JWT and PASETO access tokens.
 
 3. In the 3rd section, you will learn how to build your app with Docker and deploy it to a production Kubernetes cluster on AWS. The lectures are very detailed with a step-by-step guide, from how to build a minimal docker image, set up a free-tier AWS account, create a production database, store and retrieve production secrets, create a Kubernetes cluster with EKS, use GitHub Action to automatically build and deploy the image to the EKS cluster, buy a domain name and route the traffics to the service, secure the connection with HTTPS and auto-renew TLS certificate from Let's Encrypt.
 
@@ -30,7 +30,7 @@ The programming language we will use to develop the service is Golang, but the c
 
 This course is designed with a lot of details, so that everyone, even with very little programming experience can understand and do it by themselves. I strongly believe that after the course, you would be able to work much more confidently and effectively on your projects.
 
-## Course videos
+## Backend course videos (Golang)
 
 - Lecture #0: [Setup development environment on Windows: WSL2 + Go + VSCode + Docker + Make + Sqlc](https://www.youtube.com/watch?v=TtCfDXfSw_0&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 
@@ -124,7 +124,21 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #71: [Grant AWS EKS cluster access to Postgres and Redis using security group](https://www.youtube.com/watch?v=pPXYu6QQGE8&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 - Lecture #72: [Deploy gRPC + HTTP server to AWS EKS cluster](https://www.youtube.com/watch?v=Pd7aeh014nU&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 - Lecture #73: [Don't lose money on AWS](https://www.youtube.com/watch?v=VEf7IpUn6BQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
-- Lecture #74: [Go 1.22 fixed the most common for-loop trap](https://www.youtube.com/watch?v=rIHO9TqJtQQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
+- Lecture #74: [Graceful shutdown gRPC/HTTP servers and async worker](https://www.youtube.com/watch?v=TdB2W8l4dHw&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
+- Lecture #75: [Go 1.22 fixed the most common for-loop trap](https://www.youtube.com/watch?v=rIHO9TqJtQQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
+- Lecture #76: [Setup CORS policy with Go and VueJS](https://www.youtube.com/watch?v=hOz4f4SdArc&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
+
+## Frontend course videos (Vue.JS)
+
+- Lecture #1: [Build reactive web app with VueJS](https://www.youtube.com/watch?v=fRGgDBCWQJg&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
+- Lecture #2: [Introduction to Vue router and Vue component](https://www.youtube.com/watch?v=4rv484TofFA&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
+- Lecture #3: [Build a login form with VueJS, PrimeVue and PrimeFlex](https://www.youtube.com/watch?v=K7p7QeUkGpE&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
+- Lecture #4: [Vue reactivity with v-model and computed](https://www.youtube.com/watch?v=hZmmcvGsyyk&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
+- Lecture #5: [Send HTTP request from Vue to backend API](https://www.youtube.com/watch?v=vkAhInOcWsw&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
+- Lecture #6: [Setup CORS policy with Go and VueJS](https://www.youtube.com/watch?v=hOz4f4SdArc&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
+- Lecture #7: [How to store auth state in Vue.JS](https://www.youtube.com/watch?v=A0YSEZPxKU0&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
+- Lecture #8: [Use Vue props to pass values to child component](https://www.youtube.com/watch?v=-mJzUkpKSEg&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
+- Lecture #9: [Logout user with Vue emit](https://www.youtube.com/watch?v=Jp09xJgpU-4&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
 
 ## Simple bank service
 
@@ -144,87 +158,87 @@ The service that we’re going to build is a simple bank. It will provide APIs f
 - [Homebrew](https://brew.sh/)
 - [Migrate](https://github.com/golang-migrate/migrate/tree/master/cmd/migrate)
 
-    ```bash
-    brew install golang-migrate
-    ```
+  ```bash
+  brew install golang-migrate
+  ```
 
 - [DB Docs](https://dbdocs.io/docs)
 
-    ```bash
-    npm install -g dbdocs
-    dbdocs login
-    ```
+  ```bash
+  npm install -g dbdocs
+  dbdocs login
+  ```
 
 - [DBML CLI](https://www.dbml.org/cli/#installation)
 
-    ```bash
-    npm install -g @dbml/cli
-    dbml2sql --version
-    ```
+  ```bash
+  npm install -g @dbml/cli
+  dbml2sql --version
+  ```
 
 - [Sqlc](https://github.com/kyleconroy/sqlc#installation)
 
-    ```bash
-    brew install sqlc
-    ```
+  ```bash
+  brew install sqlc
+  ```
 
 - [Gomock](https://github.com/golang/mock)
 
-    ``` bash
-    go install github.com/golang/mock/mockgen@v1.6.0
-    ```
+  ```bash
+  go install github.com/golang/mock/mockgen@v1.6.0
+  ```
 
 ### Setup infrastructure
 
 - Create the bank-network
 
-    ``` bash
-    make network
-    ```
+  ```bash
+  make network
+  ```
 
 - Start postgres container:
 
-    ```bash
-    make postgres
-    ```
+  ```bash
+  make postgres
+  ```
 
 - Create simple_bank database:
 
-    ```bash
-    make createdb
-    ```
+  ```bash
+  make createdb
+  ```
 
 - Run db migration up all versions:
 
-    ```bash
-    make migrateup
-    ```
+  ```bash
+  make migrateup
+  ```
 
 - Run db migration up 1 version:
 
-    ```bash
-    make migrateup1
-    ```
+  ```bash
+  make migrateup1
+  ```
 
 - Run db migration down all versions:
 
-    ```bash
-    make migratedown
-    ```
+  ```bash
+  make migratedown
+  ```
 
 - Run db migration down 1 version:
 
-    ```bash
-    make migratedown1
-    ```
+  ```bash
+  make migratedown1
+  ```
 
 ### Documentation
 
 - Generate DB documentation:
 
-    ```bash
-    make db_docs
-    ```
+  ```bash
+  make db_docs
+  ```
 
 - Access the DB documentation at [this address](https://dbdocs.io/techschool.guru/simple_bank). Password: `secret`
 
@@ -232,52 +246,52 @@ The service that we’re going to build is a simple bank. It will provide APIs f
 
 - Generate schema SQL file with DBML:
 
-    ```bash
-    make db_schema
-    ```
+  ```bash
+  make db_schema
+  ```
 
 - Generate SQL CRUD with sqlc:
 
-    ```bash
-    make sqlc
-    ```
+  ```bash
+  make sqlc
+  ```
 
 - Generate DB mock with gomock:
 
-    ```bash
-    make mock
-    ```
+  ```bash
+  make mock
+  ```
 
 - Create a new db migration:
 
-    ```bash
-    make new_migration name=<migration_name>
-    ```
+  ```bash
+  make new_migration name=<migration_name>
+  ```
 
 ### How to run
 
 - Run server:
 
-    ```bash
-    make server
-    ```
+  ```bash
+  make server
+  ```
 
 - Run test:
 
-    ```bash
-    make test
-    ```
+  ```bash
+  make test
+  ```
 
 ## Deploy to kubernetes cluster
 
 - [Install nginx ingress controller](https://kubernetes.github.io/ingress-nginx/deploy/#aws):
 
-    ```bash
-    kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.48.1/deploy/static/provider/aws/deploy.yaml
-    ```
+  ```bash
+  kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.48.1/deploy/static/provider/aws/deploy.yaml
+  ```
 
 - [Install cert-manager](https://cert-manager.io/docs/installation/kubernetes/):
 
-    ```bash
-    kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.4.0/cert-manager.yaml
-    ```
+  ```bash
+  kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.4.0/cert-manager.yaml
+  ```
