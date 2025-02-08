@@ -2,12 +2,11 @@ name: Run unit tests
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
-
   test:
     name: Test
     runs-on: ubuntu-latest
@@ -28,24 +27,23 @@ jobs:
           --health-retries 5
 
     steps:
+      - name: Set up Go 1.x
+        uses: actions/setup-go@v2
+        with:
+          go-version: ^1.22
+        id: go
 
-    - name: Set up Go 1.x
-      uses: actions/setup-go@v2
-      with:
-        go-version: ^1.22
-      id: go
+      - name: Check out code into the Go module directory
+        uses: actions/checkout@v2
 
-    - name: Check out code into the Go module directory
-      uses: actions/checkout@v2
+      - name: Install golang-migrate
+        run: |
+          curl -L https://github.com/golang-migrate/migrate/releases/download/v4.14.1/migrate.linux-amd64.tar.gz | tar xvz
+          sudo mv migrate.linux-amd64 /usr/bin/migrate
+          which migrate
 
-    - name: Install golang-migrate
-      run: |
-        curl -L https://github.com/golang-migrate/migrate/releases/download/v4.14.1/migrate.linux-amd64.tar.gz | tar xvz
-        sudo mv migrate.linux-amd64 /usr/bin/migrate
-        which migrate
+      - name: Run migrations
+        run: make migrateup
 
-    - name: Run migrations
-      run: make migrateup
-
-    - name: Test
-      run: make test
+      - name: Test
+        run: make test
