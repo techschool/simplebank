@@ -127,8 +127,9 @@ This course is designed with a lot of details, so that everyone, even with very 
 - Lecture #74: [Graceful shutdown gRPC/HTTP servers and async worker](https://www.youtube.com/watch?v=TdB2W8l4dHw&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 - Lecture #75: [Go 1.22 fixed the most common for-loop trap](https://www.youtube.com/watch?v=rIHO9TqJtQQ&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 - Lecture #76: [Setup CORS policy with Go and VueJS](https://www.youtube.com/watch?v=hOz4f4SdArc&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
+- Lecture #77: [Upgrade golang JWT package to v5](https://www.youtube.com/watch?v=iVk3jOF1Cv4&list=PLy_6D98if3ULEtXtNSY_2qN21VCKgoQAE)
 
-## Frontend course videos (Vue.JS)
+## Frontend crash course videos (Vue.JS)
 
 - Lecture #1: [Build reactive web app with VueJS](https://www.youtube.com/watch?v=fRGgDBCWQJg&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
 - Lecture #2: [Introduction to Vue router and Vue component](https://www.youtube.com/watch?v=4rv484TofFA&list=PLy_6D98if3UI3rsFRTHM1LMtVprYMp-GT)
