@@ -4,7 +4,9 @@ network:
 	docker network create bank-network
 
 postgres:
-	docker run --name postgres --network bank-network -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:14-alpine
+	docker run --name postgres --network bank-network --restart unless-stopped -e POSTGRES_USER=root -e POSTGRES_HOST_AUTH_METHOD=trust -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres
+	#docker run --name postgres --network bank-network -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:14-alpine
+	#docker run --name postgres --network bank-network -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:14-alpine
 
 mysql:
 	docker run --name mysql8 -p 3306:3306  -e MYSQL_ROOT_PASSWORD=secret -d mysql:8
