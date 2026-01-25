@@ -16,8 +16,8 @@ func TestTransferTx(t *testing.T) {
 	n := 5
 	amount := int64(10)
 
-	errs := make(chan error)
-	results := make(chan TransferTxResult)
+	errs := make(chan error,n)
+	results := make(chan TransferTxResult,n)
 
 	// run n concurrent transfer transaction
 	for i := 0; i < n; i++ {
