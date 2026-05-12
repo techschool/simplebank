@@ -11,27 +11,21 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v2
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Install kubectl
-        uses: azure/setup-kubectl@v1
-        with:
-          version: "v1.21.3"
-        id: install
+        uses: azure/setup-kubectl@c0c8b32d33a5244f1e5947304550403b63930415 # v4
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@ff717079ee2060e4bcee96c4779b553acc87447c # v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: eu-west-1
+          aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Login to Amazon ECR
         id: login-ecr
-        uses: aws-actions/amazon-ecr-login@v1
-
-      - name: Load secrets and save to app.env
-        run: aws secretsmanager get-secret-value --secret-id simple_bank --query SecretString --output text | jq -r 'to_entries|map("\(.key)=\(.value)")|.[]' > app.env
+        uses: aws-actions/amazon-ecr-login@fa648b43de3d4d023bcb3f89ed6940096949c419 # v2
 
       - name: Build, tag, and push image to Amazon ECR
         env:
@@ -43,7 +37,7 @@ jobs:
           docker push -a $ECR_REGISTRY/$ECR_REPOSITORY
 
       - name: Update kube config
-        run: aws eks update-kubeconfig --name simple-bank-eks --region eu-west-1
+        run: aws eks update-kubeconfig --name ${{ secrets.EKS_CLUSTER_NAME }} --region ${{ secrets.AWS_REGION }}
 
       - name: Deploy image to Amazon EKS
         run: |

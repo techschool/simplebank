@@ -1,11 +1,11 @@
-apiVersion: v1 
-kind: ConfigMap 
-metadata: 
-  name: aws-auth 
-  namespace: kube-system 
-data: 
-  mapUsers: | 
-    - userarn: arn:aws:iam::760486049168:user/github-ci
-      username: github-ci
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aws-auth
+  namespace: kube-system
+data:
+  mapUsers: |
+    - userarn: arn:aws:iam::<AWS_ACCOUNT_ID>:user/<CI_USERNAME>
+      username: <CI_USERNAME>
       groups:
-        - system:masters
+        - simple-bank-deployer  # Scoped role — do NOT use system:masters

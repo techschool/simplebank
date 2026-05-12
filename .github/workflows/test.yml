@@ -27,20 +27,20 @@ jobs:
           --health-retries 5
 
     steps:
-      - name: Set up Go 1.x
-        uses: actions/setup-go@v2
+      - name: Check out code
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Set up Go
+        uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5
         with:
           go-version: ^1.22
-        id: go
-
-      - name: Check out code into the Go module directory
-        uses: actions/checkout@v2
 
       - name: Install golang-migrate
         run: |
-          curl -L https://github.com/golang-migrate/migrate/releases/download/v4.14.1/migrate.linux-amd64.tar.gz | tar xvz
-          sudo mv migrate.linux-amd64 /usr/bin/migrate
-          which migrate
+          curl -Lo migrate.tar.gz https://github.com/golang-migrate/migrate/releases/download/v4.19.1/migrate.linux-amd64.tar.gz
+          echo "2ac648fbd1b127b69ab5a7b33cf96212178f71e22379fc50573630c6f4c7ce18  migrate.tar.gz" | sha256sum -c -
+          tar xvzf migrate.tar.gz
+          sudo mv migrate /usr/bin/migrate
 
       - name: Run migrations
         run: make migrateup

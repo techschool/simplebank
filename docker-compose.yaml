@@ -18,6 +18,8 @@ services:
     ports:
       - "${HTTP_PORT:-8080}:8080"
       - "${GRPC_PORT:-9090}:9090"
+    env_file:
+      - app.env
     environment:
       - DB_SOURCE=postgresql://root:secret@postgres:5432/simple_bank?sslmode=disable
       - REDIS_ADDRESS=redis:6379
